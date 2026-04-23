@@ -821,7 +821,7 @@ def run_workshop():
 
     print_section("STEP 3: Split → SMOTE (train only)")
 
-    rng = np.random.RandomState(40)
+    rng = np.random.RandomState(6701)
     tr_idx, te_idx = [], []
     for cls in range(len(CLASS_NAMES)):
         idx = np.where(y_aug == cls)[0].copy()
